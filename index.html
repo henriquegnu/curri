@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo de Henrique Braga</title>
     <style>
+        /* Reset e estilização básica */
         * {
             margin: 0;
             padding: 0;
@@ -13,34 +14,44 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212;
+            color: #e0e0e0;
             line-height: 1.6;
+            padding: 20px;
         }
 
         .container {
             max-width: 900px;
-            margin: 20px auto;
-            background-color: #fff;
+            margin: 0 auto;
+            background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         header {
-            text-align: ;
-            margin-bottom: 30px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         header h1 {
-            font-size: 36px;
-            color: #333;
+            font-size: 2rem;
+            color: #ffffff;
         }
 
         header p {
-            font-size: 16px;
-            color: #777;
-            margin-top: 10px;
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #81c784;
+            text-decoration: underline;
         }
 
         .section {
@@ -48,11 +59,30 @@
         }
 
         .section h2 {
-            font-size: 24px;
-            color: #333;
-            border-bottom: 2px solid #007bff;
+            font-size: 1.5rem;
+            color: #ffffff;
+            border-bottom: 2px solid #4caf50;
             padding-bottom: 5px;
             margin-bottom: 10px;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
         }
 
         .job {
@@ -60,13 +90,8 @@
         }
 
         .job h3 {
-            font-size: 20px;
-            color: #333;
-        }
-
-        .job p {
-            font-size: 16px;
-            color: #555;
+            font-size: 1.25rem;
+            color: #ffffff;
         }
 
         ul {
@@ -75,31 +100,31 @@
         }
 
         ul li {
-            font-size: 16px;
-            color: #555;
+            font-size: 1rem;
+            color: #b3b3b3;
             margin-bottom: 5px;
         }
 
         footer {
             text-align: center;
             margin-top: 30px;
-            font-size: 16px;
-            color: #777;
-        }
-
-        footer p {
-            margin-top: 10px;
+            font-size: 0.875rem;
+            color: #b3b3b3;
+            padding: 10px;
+            background-color: #1e1e1e;
+            border-top: 2px solid #4caf50;
+            border-radius: 0 0 8px 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-        <h1>Henrique Vicente Braga</h1>
-        <p>Scrum Master  | Gerente de Projetos</p>
-        <p>Email: henriquevbra@gmail.com</p>
-	<p>Telefone: +55 (48) 9 8450-9159</p>
-	<p>LinkedIn: linkedin.com/in/henriquegnu</p>
+            <h1>Henrique Vicente Braga</h1>
+            <p>Scrum Master | Gerente de Projetos</p>
+            <p>Email: henriquevbra@gmail.com</p>
+            <p>Telefone: <a href="https://wa.me/48984509159" target="_blank">+55 (48) 9 8450-9159</a></p>
+            <p>Linkedin: <a href="https://linkedin.com/in/henriquegnu" target="_blank">linkedin.com/in/henriquegnu</a></p>
         </header>
 
         <section class="section">
@@ -109,112 +134,124 @@
 
         <section class="section">
             <h2>Formação Acadêmica</h2>
-                <li>Ensino Técnico em Informática - Alcides Maya (2019)</li>
-                <li>Tecnólogo em Gestão da Tecnologia da Informação - UNINTER (2024)</li>
-                <li>Pós-Graduação em Gestão de Projetos Ágeis - UNINTER (2024)</li>
-                <li>Pós-Graduação em Liderança e Coaching - UNINTER (prev. 2025)</li>
+            <ul>
+                <li>Ensino Técnico em Informática - Alcides Maya (12/2019)</li>
+                <li>Tecnólogo em Gestão da Tecnologia da Informação - UNINTER (06/2024)</li>
+                <li>Pós-Graduação em Gestão de Projetos Ágeis - UNINTER (12/2024)</li>
+                <li>Pós-Graduação em Gestão para Líderes - UNINTER (06/2025)</li>
+            </ul>
         </section>
 
         <section class="section">
-        <h2>Certificados e Cursos</h2>
+            <h2>Certificados e Cursos</h2>
+            <ul>
+                <li>Scrum Foundation Professional Certification (SFPC) - Certiprof (10/2023)</li>
+                <li>Scrum Fundamentals Certified (SFC) - SCRUMStudy (07/2023)</li>
+                <li>Bootcamp Gerente de Projetos - XPE (02/2024)</li>
+                <li>Google Project Management - Coursera (08/2023)</li>
+                <li>Design Sprint: inove para alcançar o sucesso - Domestika (01/2024)</li>
+                <li>Liderança Ágil: Como se Adaptar à Nova Realidade - LinkedIn (12/2023)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Experiência Profissional</h2>
+            <div class="job">
+                <h3>Estagiário em Gestão de Projetos</h3>
+                <p><strong>TT&T Soluções em Informática Ltda</strong> | Out 2024 - Presente</p>
+                <ul>
+                    <li>Suporte ao setor PeopleCare e adesão de membros.</li>
+                    <li>Organização de horários entre equipes para reuniões.</li>
+                    <li>Facilitação de cerimônias ágeis em squads diversos.</li>
+                    <li>Evangelização do Framework Scrum.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Fundador</h3>
+                <p><strong>Henrique Braga | Project Lab</strong> | Jul 2024 - Presente</p>
+            </div>
+            <div class="job">
+                <h3>Analista de Atendimento ao Cliente</h3>
+                <p><strong>Cubo Sistemas</strong> | Abr 2024 - Jul 2024</p>
+                <ul>
+                    <li>Suporte técnico ao CRM de cobrança.</li>
+                </ul>
+            </div>
             
-        <li>Scrum Foundation Professional Certification (SFPC) - Certiprof (10/2023)</li>
-        <li>Scrum Fundamentals Certified (SFC) - SCRUMStudy (07/2023)</li>
-	<li>Bootcamp Gerente de Projetos - XPE (02/2024)</li>
-        <li>Bootcamp Agile Expert - XPE (01/2024)</li>
-        <li>Google Project Management - Coursera (08/2023)</li>
-        <li>Google Data Analytics - Coursera (09/2023)</li>
-	<li>BUSLEAD1x: Becoming an Effective Leader - The Univertsity of Queensland (01/2024)</li>
-	<li>Design Sprint: inove para alcançar o sucesso - Domestika (01/2024)</li>
-	<li>Fundamentos para Gestão de Projetos - Microsoft e LinkedIn (01/2024)</li>
-	<li>Intelligent Automation for Projects Managers - LinkedIn (12/2023)</li>
-	<li>Leveraging Generative AI for Project Management - LinkedIn (12/2023)</li>
-	<li>Artificial Intelligence: How Project Managers Can Leverage AI - LinkedIn (12/2023)</li>
-	<li>Liderança Ágil: Como se Adaptar à Nova Realidade - LinkedIn (12/2023)</li>
-        </section>
+            <div class="job">
+          <h3>Fundador</h3>
+            <p><strong>Incógnit0</strong></p>
+              <p>Fev 2023 - Mar 2024</p>
+                <li>Mantenedor principal e fundador</li>
+  	            <li>Projeto social com foco na educação socioeconomicamente inclusiva, sem fins lucrativos</li>
+  	            <li>Educação a distância no Brasil e presencial na Amurel.</li>
+      </div>
+      <div class="job">
+          <h3>Diretor de Projetos</h3>
+            <p><strong>Sharkcode</strong></p>
+              <p>Mar 2023 - Fev 2024</p>
+                <li>Gestão de projetos com métodos híbridos, Scrum e Waterfall.</li>
+                <li>Criação de trilhas de aprendizado para a equipe e prototipagem com Figma.</li>
+                <li>Desenvolvimento de documentação base para projetos estratégicos.</li>
+      </div>
+      <div class="job">
+          <h3>Analista de Suporte Técnico</h3>
+            <p><strong>MinhaEntrada</strong></p>
+              <p>Jul 2023 - Nov 2023</p>
+                <li>Suporte Técnico aos Sistemas</li>
+  	            <li>Pontos de Vendas</li>
+  	            <li>Aplicativos</li>
+  	            <li>SAC</li>
+      </div>
+      <div class="job">
+          <h3>Autônomo</h3>
+            <p><strong>Marketing de Vendas</strong></p>
+              <p>Abr 2022 - Jan 2023</p>
+                <li>Gestão de tráfego pago utilizando Meta Ads.</li>
+                <li>Gerenciamento completo de operações, da criação de produtos à venda.</li>
+      </div>
+      <div class="job">
+          <h3>Suporte Técnico</h3>
+            <p><strong>TRUE Tecnologia para a Vida</strong></p>
+            <p>Set 2020 - Jun 2021</p>
+                <li>Sistemas de regulação médica do Estado do Rio Grande do Sul. Gerint e Gercon</li>
+  	            <li>Conhecimento e habilidade em lidar com sistemas como suporte</li>
+  	            <li>Capacidade de trabalhar em uma crise mundial, no foco da solução do problema</li>
+      </div>
+      <div class="job">
+          <h3>NOC (Network Operations Center)</h3>
+            <p><strong>7inCloud</strong></p>
+            <p>Jul 2019 - Jun 2020</p>
+                <li>Monitoramento de Infraestrura de Redes</li>
+  	            <li>Grafana e Zabbix</li>
+  	            <li>AWS para Infra em Nuvem</li>
+  	            <li>Documentação e escalonamento de incidentes</li>
+      </div>
+      <div class="job">
+          <h3>Estagiário de TI</h3>
+            <p><strong>Centro Administrativo Fernando Ferrari</strong></p>
+            <p>Jun 2018 - Jun 2019</p>
+              <li>Assistência e manutenção técnica</li>
+              <li>Auxilio na utilização de sistemas e itens eletrônicos</li>
+      </div>
+  </section>
 
-        <section class="section">
-    <h2>Experiência Profissional</h2>
-    <div class="job">
-        <h3>Estagiário em Gestão de Projetos</h3>
-        <p><strong>TT&T Soluções em Informática Ltda</strong> | Out 2024 - Presente</p>
-        <li>Suporte ao setor PeopleCare e adesão de membros.</li>
-        <li>Organização de horários entre equipes para facilitar reuniões e alinhamentos.</li>
-        <li>Facilitação de cerimônias ágeis em diversos squads.</li>
-        <li>Evangelização do Framework Scrum, promovendo boas práticas ágeis.</li>
-        <li>Criação de ferramentas diversas para suporte à gestão de projetos.</li>
-    </div>
-    <div class="job">
-        <h3>Fundador</h3>
-        <p><strong>Henrique Braga | Project Lab</strong> | Jul 2024 - Presente</p>
-    </div>
-    <div class="job">
-        <h3>Analista de Atendimento ao Cliente</h3>
-        <p><strong>Cubo Sistemas</strong> | Abr 2024 - Jul 2024</p>
-        <li>Suporte técnico ao CRM de cobrança</li>
-    </div>
-    <div class="job">
-        <h3>Fundador</h3>
-        <p><strong>Incógnit0</strong> | Fev 2023 - Mar 2024</p>
-        <li>Mantenedor principal e fundador</li>
-	<li>Projeto social com foco na educação socioeconomicamente inclusiva, sem fins lucrativos</li>
-	<li>Educação a distância no Brasil e presencial na Amurel.</li>
-    </div>
-    <div class="job">
-        <h3>Diretor de Projetos</h3>
-        <p><strong>Sharkcode</strong> | Mar 2023 - Fev 2024</p>
-        <li>Gestão de projetos com métodos híbridos, Scrum e Waterfall.</li>
-        <li>Criação de trilhas de aprendizado para a equipe e prototipagem com Figma.</li>
-        <li>Desenvolvimento de documentação base para projetos estratégicos.</li>
-    </div>
-    <div class="job">
-        <h3>Analista de Suporte Técnico</h3>
-        <p><strong>MinhaEntrada</strong> | Jul 2023 - Nov 2023</p>
-        <li>Suporte Técnico aos Sistemas</li>
-	<li>Pontos de Vendas</li>
-	<li>Aplicativos</li>
-	<li>SAC</li>
-    </div>
-    <div class="job">
-        <h3>Autônomo</h3>
-        <p><strong>Marketing de Vendas</strong> | Abr 2022 - Jan 2023</p>
-        <li>Gestão de tráfego pago utilizando Meta Ads.</li>
-        <li>Gerenciamento completo de operações, da criação de produtos à venda.</li>
-    </div>
-    <div class="job">
-        <h3>Suporte Técnico</h3>
-        <p><strong>TRUE Tecnologia para a Vida</strong> | Set 2020 - Jun 2021</p>
-        <li>Sistemas de regulação médica do Estado do Rio Grande do Sul. Gerint e Gercon</li>
-	<li>Conhecimento e habilidade em lidar com sistemas como suporte</li>
-	<li>Capacidade de trabalhar em uma crise mundial, no foco da solução do problema</li>
-    </div>
-    <div class="job">
-        <h3>NOC (Network Operations Center)</h3>
-        <p><strong>7inCloud</strong> | Jul 2019 - Jun 2020</p>
-        <li>Monitoramento de Infraestrura de Redes</li>
-	<li>Grafana e Zabbix</li>
-	<li>AWS para Infra em Nuvem</li>
-	<li>Documentação e escalonamento de incidentes</li>
-    </div>
-    <div class="job">
-        <h3>Estagiário de TI</h3>
-        <li><strong>Centro Administrativo Fernando Ferrari</strong> | Jun 2018 - Jun 2019</p>
-        <li>Assistência e manutenção técnica</li>
-	<li>Auxilio na utilização de sistemas e itens eletrônicos</li>
-    </div>
-</section>
-
-
-        <section class="section">
-            <h2>Habilidades</h2>
-                <p>Comunicação eficaz</p>
-                <p>Trabalho em equipe</p>
-                <p>Gestão de tempo</p>
-                <p>Liderança</p>
-                <p>Metodologias Ágeis (diversos)</p>
-        </section>
-
+      
 
     </div>
+    
+    <footer>
+        <p>Obrigado por visitar meu currículo!</p>
+        <p>Fique à vontade para entrar em contato para mais informações.</p>
+    </footer>
+    
+    <button id="backToTop" onclick="scrollToTop()">Voltar ao Topo</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
 </body>
 </html>
