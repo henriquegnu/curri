@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo de Henrique Braga</title>
     <style>
-
+        /* Reset e configurações básicas */
         * {
             margin: 0;
             padding: 0;
@@ -14,8 +14,8 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #000;
+            color: #fff;
             line-height: 1.6;
             padding: 20px;
         }
@@ -23,7 +23,7 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background-color: #1e1e1e;
+            background-color: #121212;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -36,12 +36,12 @@
 
         header h1 {
             font-size: 2rem;
-            color: #ffffff;
+            color: #d3d3d3;
         }
 
         header p {
             font-size: 1rem;
-            color: #b3b3b3;
+            color: #b0b0b0;
         }
 
         a {
@@ -60,29 +60,10 @@
 
         .section h2 {
             font-size: 1.5rem;
-            color: #ffffff;
+            color: #d3d3d3;
             border-bottom: 2px solid #4caf50;
             padding-bottom: 5px;
             margin-bottom: 10px;
-        }
-
-        #backToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-
-        #backToTop:hover {
-            background-color: #0056b3;
         }
 
         .job {
@@ -91,7 +72,7 @@
 
         .job h3 {
             font-size: 1.25rem;
-            color: #ffffff;
+            color: #d3d3d3;
         }
 
         ul {
@@ -101,7 +82,7 @@
 
         ul li {
             font-size: 1rem;
-            color: #b3b3b3;
+            color: #fff;
             margin-bottom: 5px;
         }
 
@@ -109,11 +90,31 @@
             text-align: center;
             margin-top: 30px;
             font-size: 0.875rem;
-            color: #b3b3b3;
+            color: #b0b0b0;
             padding: 10px;
-            background-color: #1e1e1e;
+            background-color: #121212;
             border-top: 2px solid #4caf50;
             border-radius: 0 0 8px 8px;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4caf50;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #backToTop:hover {
+            background-color: #81c784;
+            color: #fff;
         }
     </style>
 </head>
@@ -122,9 +123,6 @@
         <header>
             <h1>Henrique Vicente Braga</h1>
             <p>Scrum Master | Gerente de Projetos</p>
-            <p>Email: henriquevbra@gmail.com</p>
-            <p>Telefone: <a href="https://wa.me/48996196699" target="_blank">+55 (48) 9 9619-6699</a></p>
-            <p>Linkedin: <a href="https://linkedin.com/in/henriquegnu" target="_blank">linkedin.com/in/henriquegnu</a></p>
         </header>
 
         <section class="section">
@@ -135,22 +133,21 @@
         <section class="section">
             <h2>Formação Acadêmica</h2>
             <ul>
-                <li>Ensino Técnico em Informática - Alcides Maya (12/2019)</li>
+                <li>Ensino Técnico em Informática - Alcides Maya (12/2019) Nota: 8</li>
                 <li>Tecnólogo em Gestão da Tecnologia da Informação - UNINTER (06/2024) Nota: 7,77</li>
                 <li>Pós-Graduação em Gestão de Projetos Ágeis - UNINTER (12/2024) Nota: 9,5</li>
-                <li>Pós-Graduação em Gestão para Líderes - UNINTER (06/2025)</li>
+                <li>Pós-Graduação em Gestão para Líderes - UNINTER (06/2025) Nota: </li>
             </ul>
         </section>
 
         <section class="section">
             <h2>Certificados</h2>
             <ul>
-		<h3>Certificados</h3>
                 <li>Scrum Fundamentals Certified (SFC) - SCRUMStudy (07/2023)</li>
                 <li>Scrum Foundation Professional Certification (SFPC) - Certiprof (10/2023)</li>
-		<li>Fundamentals of Agile Project Management (06/2023)</li>
-		<li>Fundamentals of Predictive Project Management (06/2023)</li>
-		<li>Google Project Management - Coursera (08/2023)</li>
+                <li>Fundamentals of Agile Project Management (06/2023)</li>
+                <li>Fundamentals of Predictive Project Management (06/2023)</li>
+                <li>Google Project Management - Coursera (08/2023)</li>
             </ul>
         </section>
 
@@ -159,87 +156,93 @@
             <div class="job">
                 <h3>Estagiário em Gestão de Projetos</h3>
                 <p><strong>TT&T Soluções em Informática Ltda</strong> | Out 2024 - Presente</p>
+                <ul>
                     <li>Facilitação em diversos Squads</li>
-		    <li>Coaching, liderança servidora, priorização e direcionamento de entregas</li>
-		    <li>Mediação para facilitar o entendimento entre abordagens tradicionais e ágeis</li>
-		    <li>Criação de ferramentas em um ecossistema majoritariamente integrado às soluções do Google</li>
-		    <li>Evangelização do Framework Scrum</li>
+                    <li>Coaching, liderança servidora, priorização e direcionamento de entregas</li>
+                    <li>Mediação entre abordagens tradicionais e ágeis</li>
+                    <li>Criação de ferramentas integradas ao Google</li>
+                    <li>Evangelização do Framework Scrum</li>
+                </ul>
             </div>
 
             <div class="job">
                 <h3>Analista de Atendimento ao Cliente</h3>
                 <p><strong>Cubo Sistemas</strong> | Abr 2024 - Jul 2024</p>
-                    <li>Suporte técnico ao CRM de cobrança.</li>
+                <ul>
+                    <li>Suporte técnico ao CRM de cobrança</li>
+                </ul>
             </div>
             
             <div class="job">
           <h3>Fundador</h3>
-            <p><strong>Incógnit0</strong></p>
-              <p>Fev 2023 - Mar 2024</p>
+            <p><strong>Incógnit0</strong> | Fev 2023 - Mar 2024</p>
+              <ul>
                 <li>Mantenedor principal e fundador</li>
   	            <li>Projeto social com foco na educação socioeconomicamente inclusiva, sem fins lucrativos</li>
   	            <li>Educação a distância no Brasil e presencial na Amurel.</li>
+              </ul>
       </div>
       <div class="job">
           <h3>Diretor de Projetos</h3>
-            <p><strong>Sharkcode</strong></p>
-              <p>Mar 2023 - Fev 2024</p>
+            <p><strong>Sharkcode | Mar 2023 - Fev 2024</strong></p>
+			<ul>
                 <li>Gestão de projetos com métodos híbridos, Scrum e Waterfall.</li>
                 <li>Criação de trilhas de aprendizado para a equipe e prototipagem com Figma.</li>
                 <li>Desenvolvimento de documentação base para projetos estratégicos.</li>
-      </div>
+      		</ul>
+              </div>
+              
       <div class="job">
           <h3>Analista de Suporte Técnico</h3>
-            <p><strong>MinhaEntrada</strong></p>
-              <p>Jul 2023 - Nov 2023</p>
+            <p><strong>MinhaEntrada | Jul 2023 - Nov 2023</strong></p>
+        	<ul>	
                 <li>Suporte Técnico aos Sistemas</li>
   	            <li>Pontos de Vendas</li>
   	            <li>Aplicativos</li>
   	            <li>SAC</li>
+        	</ul>
       </div>
-      <div class="job">
-          <h3>Autônomo</h3>
-            <p><strong>Marketing de Vendas</strong></p>
-              <p>Abr 2022 - Jan 2023</p>
-                <li>Gestão de tráfego pago utilizando Meta Ads.</li>
-                <li>Gerenciamento completo de operações, da criação de produtos à venda.</li>
-      </div>
+      
       <div class="job">
           <h3>Suporte Técnico</h3>
-            <p><strong>TRUE Tecnologia para a Vida</strong></p>
-            <p>Set 2020 - Jun 2021</p>
+            <p><strong>TRUE Tecnologia para a Vida | Set 2020 - Jun 2021</strong></p>
+            <ul>
                 <li>Sistemas de regulação médica do Estado do Rio Grande do Sul. Gerint e Gercon</li>
   	            <li>Conhecimento e habilidade em lidar com sistemas como suporte</li>
   	            <li>Capacidade de trabalhar em uma crise mundial, no foco da solução do problema</li>
-      </div>
+      		</ul>
+          </div>
+          
       <div class="job">
           <h3>NOC (Network Operations Center)</h3>
-            <p><strong>7inCloud</strong></p>
-            <p>Jul 2019 - Jun 2020</p>
+            <p><strong>7inCloud | Jul 2019 - Jun 2020</strong></p>
+			<ul>
                 <li>Monitoramento de Infraestrura de Redes</li>
   	            <li>Grafana e Zabbix</li>
   	            <li>AWS para Infra em Nuvem</li>
   	            <li>Documentação e escalonamento de incidentes</li>
+            </ul>
       </div>
+          
       <div class="job">
           <h3>Estagiário de TI</h3>
-            <p><strong>Centro Administrativo Fernando Ferrari</strong></p>
-            <p>Jun 2018 - Jun 2019</p>
+            <p><strong>Centro Administrativo Fernando Ferrari (CAFF) | Jun 2018 - Jun 2019</strong></p>
+			<ul>
               <li>Assistência e manutenção técnica</li>
               <li>Auxilio na utilização de sistemas e itens eletrônicos</li>
-      </div>
+      		</ul>
+          </div>
 	<div class="job">
-  </section>
-
-      
-
+          
+          
+        </section>
     </div>
-    
+
     <footer>
         <p>Obrigado por visitar meu currículo!</p>
         <p>Fique à vontade para entrar em contato para mais informações.</p>
     </footer>
-    
+
     <button id="backToTop" onclick="scrollToTop()">Voltar ao Topo</button>
 
     <script>
@@ -247,6 +250,5 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-    
 </body>
 </html>
